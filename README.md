@@ -38,3 +38,8 @@ A Python script for Twitch Chat interaction with almost any game.
         if "up" == message.lower():
             ahk.key_press('up')
             message = ""
+
+----
+### Run the Script:
+#### Navigate to the project directory using CMD or Terminal and run the command:
+    py twitchchatplays.py
