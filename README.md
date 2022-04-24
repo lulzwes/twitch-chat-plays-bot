@@ -45,10 +45,18 @@ A Python script for Twitch Chat interaction with almost any game.
 
 #### Game controls are handled by condition checks(if chat sends "up", AHK will read "up" and pass the command to the game).
 ###### You may need to go into game settings to reconfigure keymap for each game.
-###### See below example, add and alter as you seem fit for each game.
+###### See below example(s):
 ```python
+    # For an "UP" Press:
     if "up" == message.lower():
         ahk.key_press('up')
+        message = ""
+```
+###### alternatively, add and remove conditions as you seem fit.
+```python
+    # For a "DOWN" Press:
+    if "down" == message.lower():
+        ahk.key_press('down')
         message = ""
 ```
 
