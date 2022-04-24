@@ -43,8 +43,9 @@ A Python script for Twitch Chat interaction with almost any game.
 ----
 ### Tweaking:
 
-#### Game controls are handled by condition checks(if chat sends "up", AHK will read "up" and pass the command to the game). See below example, add and alter as you seem fit for each game.
+#### Game controls are handled by condition checks(if chat sends "up", AHK will read "up" and pass the command to the game).
 ###### You may need to go into game settings to reconfigure keymap for each game.
+###### See below example, add and alter as you seem fit for each game.
 ```python
     if "up" == message.lower():
         ahk.key_press('up')
@@ -57,34 +58,35 @@ A Python script for Twitch Chat interaction with almost any game.
 ```shell
     py twitchchatplays.py
 ```
-###### * Testing will be unresponsive from host machine running the script.
-###### You will need to test from another device, or get a friend to login to Twitch and test inputs that way.
 
 ###### Successful output example:
 ```shell
-:tmi.twitch.tv 001 :Welcome, GLHF!
-:tmi.twitch.tv 002 :Your host is tmi.twitch.tv
-:tmi.twitch.tv 003 :This server is rather new
-:tmi.twitch.tv 004 :-
-:tmi.twitch.tv 005 :-
-:tmi.twitch.tv 006 :You are in a maze of twisty passages, all alike.
-:tmi.twitch.tv 007 :>
-
-:tmi.twitch.tv 001 :Welcome, GLHF!
-:tmi.twitch.tv 002 :Your host is tmi.twitch.tv
-:tmi.twitch.tv 003 :This server is rather new
-:tmi.twitch.tv 004 :-
-:tmi.twitch.tv 005 :-
-:tmi.twitch.tv 006 :You are in a maze of twisty passages, all alike.
-:tmi.twitch.tv 007 :>
-:name!name@name.tmi.twitch.tv JOIN #name
-:name.tmi.twitch.tv 008 name = #name :name
-:name.tmi.twitch.tv 009 name #name :End of /NAMES list
-
-:name!name@name.tmi.twitch.tv JOIN #name
-:name.tmi.twitch.tv 001 name = #name :name
-:name.tmi.twitch.tv 002 name #name :End of /NAMES list
-BOT has joined name's Channel!
-tmi.twitch.tv CAP * ACK  : twitch.tv/tags
--- Twitch chat messages will show up here. --
+    :tmi.twitch.tv 001 :Welcome, GLHF!
+    :tmi.twitch.tv 002 :Your host is tmi.twitch.tv
+    :tmi.twitch.tv 003 :This server is rather new
+    :tmi.twitch.tv 004 :-
+    :tmi.twitch.tv 005 :-
+    :tmi.twitch.tv 006 :You are in a maze of twisty passages, all alike.
+    :tmi.twitch.tv 007 :>
+    
+    :tmi.twitch.tv 001 :Welcome, GLHF!
+    :tmi.twitch.tv 002 :Your host is tmi.twitch.tv
+    :tmi.twitch.tv 003 :This server is rather new
+    :tmi.twitch.tv 004 :-
+    :tmi.twitch.tv 005 :-
+    :tmi.twitch.tv 006 :You are in a maze of twisty passages, all alike.
+    :tmi.twitch.tv 007 :>
+    :name!name@name.tmi.twitch.tv JOIN #name
+    :name.tmi.twitch.tv 008 name = #name :name
+    :name.tmi.twitch.tv 009 name #name :End of /NAMES list
+    
+    :name!name@name.tmi.twitch.tv JOIN #name
+    :name.tmi.twitch.tv 001 name = #name :name
+    :name.tmi.twitch.tv 002 name #name :End of /NAMES list
+    BOT has joined name's Channel!
+    tmi.twitch.tv CAP * ACK  : twitch.tv/tags
+    -- Twitch chat messages will show up here. --
 ```
+
+###### * Testing will be unresponsive from host machine running the script.
+###### You will need to test from another device, or get a friend to login to Twitch and test inputs that way.

@@ -30,22 +30,6 @@ def gamecontrol():
 			ahk.key_press('up')
 			message = ""
 
-		if "down" == message.lower():
-			ahk.key_press('down')
-			message = ""
-
-		if "left" == message.lower():
-			ahk.key_press('left')
-			message = ""
-
-		if "right" == message.lower():
-			ahk.key_press('right')
-			message = ""
-
-		if "start" == message.lower():
-			ahk.key_press('enter')
-			message = ""
-
 def twitch():
 	global user
 	global message
