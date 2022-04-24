@@ -6,7 +6,7 @@ A Python script for Twitch Chat interaction with almost any game.
 ----
 ### Prerequisites:
 - Python https://www.python.org/downloads/ (tested with 3.10)
-- Download Autohotkey from https://www.autohotkey.com/ and provide the .exe path to line 5. 
+- Download Autohotkey from https://www.autohotkey.com/ and provide the .exe path to line 5 of the script. 
 - Install ahk through pip - https://pypi.org/project/ahk/
 - Get your Twitch oauth key from https://twitchapps.com/tmi/ (DO NOT SHARE THIS!), and paste the key on line 10 between the parentheses. 
 
@@ -34,6 +34,7 @@ A Python script for Twitch Chat interaction with almost any game.
 ### Tweaking:
 
 #### Game controls are handled by condition checks(if chat sends "up", AHK will read "up" and pass the command to the game). See below example, add and alter as you seem fit for each game.
+###### You may need to go into game settings to reconfigure keymap for each game.
 
         if "up" == message.lower():
             ahk.key_press('up')
