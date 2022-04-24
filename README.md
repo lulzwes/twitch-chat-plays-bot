@@ -1,6 +1,5 @@
 # Twitch Chat Plays Bot
 ![GitHub Repo stars](https://img.shields.io/github/stars/lulzwes/twitch-chat-plays-bot?style=social)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/lulzwes/twitch-chat-plays-bot)
 
 A Python script for Twitch Chat interaction with almost any game.
 
@@ -36,10 +35,6 @@ A Python script for Twitch Chat interaction with almost any game.
 
 #### Game controls are handled by condition checks(if chat sends "up", AHK will read "up" and pass the command to the game). See below example, add and alter as you seem fit for each game.
 
-    def gamecontrol():
-        global message
-
-	    while True:
-            if "up" == message.lower():
-                ahk.key_press('up')
-                message = ""
+        if "up" == message.lower():
+            ahk.key_press('up')
+            message = ""
