@@ -1,5 +1,6 @@
 # Twitch Chat Plays Bot
-![GitHub Repo stars](https://img.shields.io/github/stars/lulzwes/twitch-chat-plays-bot?style=social)
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+
 
 A Python script for Twitch Chat interaction with almost any game.
 
