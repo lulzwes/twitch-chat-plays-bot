@@ -44,3 +44,5 @@ A Python script for Twitch Chat interaction with almost any game.
 ### Run the Script:
 #### Navigate to the project directory using CMD or Terminal and run the command:
     py twitchchatplays.py
+###### * Testing will be unresponsive from host machine running the script.
+###### You will need to test from another device, or get a friend to login to Twitch and test inputs that way.
