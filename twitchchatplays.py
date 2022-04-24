@@ -22,7 +22,7 @@ irc.send((	"OAUTH " + OAUTH + "\n" +
 			"NICK " + BOT + "\n" +
 			"JOIN #" + CHANNEL + "\n").encode())
 
-def gamecontrol():
+def gameControls():
 	global message
 
 	while True:
@@ -107,6 +107,6 @@ def main():
 	if __name__ =='__main__':
 		t1 = threading.Thread(target = twitch)
 		t1.start()
-		t2 = threading.Thread(target = gamecontrol)
+		t2 = threading.Thread(target = gameControls)
 		t2. start()
 main()
