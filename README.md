@@ -3,6 +3,7 @@
 
 
 A Python script for Twitch Chat interaction with almost any game.
+###### I have only tested this on Windows.
 
 ----
 ### Prerequisites:
